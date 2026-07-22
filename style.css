@@ -1,0 +1,160 @@
+/* ===== RailBrake PL ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#111827;
+    color:#fff;
+    min-height:100vh;
+}
+
+.app{
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+}
+
+.header{
+    text-align:center;
+    margin:30px 0;
+}
+
+.header h1{
+    font-size:34px;
+    margin-bottom:8px;
+}
+
+.header p{
+    color:#b8c1cc;
+    font-size:16px;
+}
+
+.card{
+    background:#1f2937;
+    border-radius:22px;
+    padding:22px;
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+label{
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-size:14px;
+    color:#d1d5db;
+    font-weight:600;
+}
+
+select,
+input{
+    width:100%;
+    height:56px;
+    border:none;
+    outline:none;
+    border-radius:14px;
+    background:#374151;
+    color:#fff;
+    font-size:19px;
+    padding:0 16px;
+    transition:.2s;
+}
+
+select:focus,
+input:focus{
+    background:#4b5563;
+}
+
+button{
+    width:100%;
+    height:60px;
+    border:none;
+    border-radius:16px;
+    margin-top:28px;
+    background:#2563eb;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+button:active{
+    transform:scale(.98);
+}
+
+#wyniki{
+    display:none;
+}
+
+.wiersz{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.wiersz span{
+    color:#cbd5e1;
+    font-size:17px;
+}
+
+.wiersz strong{
+    font-size:21px;
+    color:#fff;
+}
+
+.opis{
+    font-size:13px;
+    color:#9ca3af;
+    margin-top:4px;
+    margin-bottom:8px;
+}
+
+#status{
+    margin-top:25px;
+    padding:18px;
+    border-radius:16px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.pozytywna{
+    background:#14532d;
+    color:#4ade80;
+}
+
+.negatywna{
+    background:#7f1d1d;
+    color:#f87171;
+}
+
+@media(max-width:480px){
+
+.app{
+    padding:14px;
+}
+
+.card{
+    padding:18px;
+}
+
+.header h1{
+    font-size:28px;
+}
+
+button{
+    height:58px;
+}
+
+}
