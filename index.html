@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RailBrake PL</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+<!-- FORMULARZ -->
+
+<div id="formularz">
+
+
+    <div class="logo">
+
+        🚆
+
+        <h1>RailBrake PL</h1>
+
+        <p>Kalkulator Próby Hamulca</p>
+
+    </div>
+
+
+
+    <div class="card">
+
+
+        <label>Pojazd</label>
+
+        <select id="pojazd"></select>
+
+
+
+        <label>Mo [t]</label>
+
+        <input 
+            type="number"
+            id="mo"
+        >
+
+
+
+        <label>Mhr [t]</label>
+
+        <input 
+            type="number"
+            id="mhr"
+        >
+
+
+
+        <label>Ciśnienie PG hamulca [MPa]</label>
+
+        <input
+            type="number"
+            step="0.01"
+            id="pg"
+        >
+
+
+
+        <label>Ciśnienie PG sprężonego powietrza [MPa]</label>
+
+        <input
+            type="number"
+            step="0.01"
+            id="spr"
+        >
+
+
+
+        <label>Pw [%]</label>
+
+        <input
+            type="number"
+            id="pw"
+            placeholder="np. 90"
+        >
+
+
+
+        <button id="obliczBtn">
+
+            🧮 OBLICZ
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+
+<!-- WYNIKI -->
+
+
+<div id="wyniki" style="display:none;">
+
+
+    <div class="logo">
+
+        🚆
+
+        <h1>Wyniki</h1>
+
+    </div>
+
+
+
+
+    <div class="card">
+
+
+
+        <div class="wynik">
+
+            <span>Mos</span>
+
+            <strong id="mos"></strong>
+
+        </div>
+
+
+
+        <div class="wynik">
+
+            <span>Mo</span>
+
+            <strong id="moW"></strong>
+
+        </div>
+
+
+
+        <div class="wynik">
+
+            <span>Mhw</span>
+
+            <strong id="mhw"></strong>
+
+        </div>
+
+
+
+        <div class="uwaga">
+
+            ↑ Zaokrąglij w górę
+
+        </div>
+
+
+
+
+        <div class="wynik">
+
+            <span>Mhr</span>
+
+            <strong id="mhrW"></strong>
+
+        </div>
+
+
+
+        <div class="uwaga">
+
+            ↓ Zaokrąglij w dół
+
+        </div>
+
+
+
+
+
+        <div class="wynik">
+
+            <span>Pw</span>
+
+            <strong id="pwW"></strong>
+
+        </div>
+
+
+
+        <div class="uwaga">
+
+            ↑ Zaokrąglij w górę
+
+        </div>
+
+
+
+
+
+        <div class="wynik">
+
+            <span>PR</span>
+
+            <strong id="pr"></strong>
+
+        </div>
+
+
+
+        <div class="uwaga">
+
+            ↓ Zaokrąglij w dół
+
+        </div>
+
+
+
+
+
+        <div class="wynik">
+
+            <span>PG hamulca</span>
+
+            <strong id="pgW"></strong>
+
+        </div>
+
+
+
+
+        <div class="wynik">
+
+            <span>PG spr. pow.</span>
+
+            <strong id="sprW"></strong>
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div id="status"></div>
+
+
+
+    <button id="powrotBtn">
+
+        ← Nowe obliczenie
+
+    </button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
